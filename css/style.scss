@@ -1,3 +1,10 @@
+@import 'mobile';
+
+@media screen and (min-width: 1280px) {
+  @import 'desktop';
+  
+}
+
 body {
   background-color: yellow;
 }
@@ -31,7 +38,7 @@ input {
   width: 35px;
   height: 35px;
   opacity: 0;
-}
+} 
 
 input:checked + .menu button span {
   position: absolute;

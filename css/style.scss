@@ -39,7 +39,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: yellow;
-  margin: 0px;
+  font-family: 'Jockey One', sans-serif;
 }
 
 button {
@@ -48,8 +48,8 @@ button {
   background: transparent;
   border: 0;
   position: fixed;
-  right: 20px;
-  top: 20px;
+  left: 10px;
+  top: 10px;
   z-index: 2;
   pointer-events: none;
 }
@@ -58,15 +58,15 @@ button span {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: yellow;
   border-radius: 6px;
   margin-bottom: 4px;
 }
 
 input {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  left: 10px;
   z-index: 1;
   width: 35px;
   height: 35px;
@@ -92,14 +92,16 @@ input:checked + .menu button span:nth-child(3) {
 
 nav {
   position: fixed;
-  top: 0;
+  top: 52px;
   left: 0;
-  background-color: rgba($color: #cc67ebc2, $alpha: 0.5);
+  background-color: rgba($color: rgb(185, 112, 238), $alpha: 1);
   width: 100vw;
   height: 100vh;
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   visibility: hidden;
+  
+
 }
 
 input:checked + .menu nav {

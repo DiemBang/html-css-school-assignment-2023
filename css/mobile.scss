@@ -1,18 +1,39 @@
+
+
 header {
-    display: flex;
-    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 8px;
     background-color: black;
-    color: white;
-    flex-direction: column;
-    
+    top: 0;
+
     h1 {
-        margin: 0;
-        align-self: center;
+        // margin: 0;
+        //align-self: center;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 
-
-
 .page1 {
-
+    position: absolute;
+    top: 70px;
 }
+
+// .intro {
+//     display: flex;
+//     flex: 1;
+//     flex-direction: column;
+//     background-color: black;
+//     color: greenyellow;
+//     margin-top: 100px;
+//     height: 100%;
+//     // margin-left: 8px;
+//     // margin-right: 8px;
+// }
+
+// .page-title {
+
+// }

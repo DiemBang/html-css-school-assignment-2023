@@ -1,1 +1,1 @@
-header{display:flex;justify-content:space-between;background-color:#000;color:#fff;flex-direction:column}header h1{margin:0;align-self:center}
+header{position:fixed;z-index:999;width:100%;padding:8px;background-color:#000;top:0}header h1{color:#fff;text-align:center;text-transform:uppercase}.page1{position:absolute;top:70px}

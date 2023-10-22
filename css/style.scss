@@ -1,35 +1,4 @@
-//CSS reset
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-input, button, textarea, select {
-  font: inherit;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-#root, #__next {
-  isolation: isolate;
-}
-//------------------------------------------------------
-
+@import 'reset';
 @import 'mobile';
 
 @media screen and (min-width: 1280px) {
@@ -39,7 +8,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: yellow;
-  font-family: 'Jockey One', sans-serif;
+  font-family: 'Jockey One', 'Roboto Condensed';
 }
 
 button {
@@ -95,6 +64,7 @@ nav {
   top: 52px;
   left: 0;
   background-color: rgba($color: rgb(185, 112, 238), $alpha: 1);
+  color: white;
   width: 100vw;
   height: 100vh;
   opacity: 1;
@@ -116,7 +86,12 @@ ul {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
+
+  li {
+    font-size: 2em;
+    padding: 0.3em;
+  }
 
 }

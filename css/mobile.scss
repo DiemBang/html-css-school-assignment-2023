@@ -34,10 +34,30 @@ header {
 
 .page-title {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-color: black;
     margin-top: 0px;
     margin-bottom: 0;
     margin-left: 0;
+    text-transform: uppercase;
+
+    span {
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+
+    span:nth-child(2) {
+        grid-column-start: 4;
+        grid-row-start: 1;
+
+    }
+
+    span:nth-child(3) {
+        grid-column-start: 3;
+        grid-row-start: 3;
+
+    }
 }
 
 .lettuce-img img {

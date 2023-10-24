@@ -3,91 +3,89 @@ $green: rgb(0, 255, 56);
 
 body {
     background-color: $yellow;
+    margin: 0;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 header {
-    position: fixed;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 10em;
     background-color: black;
-    width: 4em;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    min-width: 10em;
+    padding-top: 2em;
+
     grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
 
     h1 {
+        margin: 0;
         color: white;
-        //text-align: center;
+        text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.3em;
+        padding-top: 0.5em;
         writing-mode: vertical-lr;
         text-orientation: upright;
-
     }
 }
 
-.page1 {
+.page-1-grid-container {
     display: grid;
-    gap: 0.7em;
     grid-template-columns: repeat(12, 1fr);
-    //grid-template-rows: repeat(2, 1fr);
-    padding-left: 4em;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+}
+
+// Common style for all grid items
+.page-1-grid-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    overflow: hidden;
 }
 
 .page-title {
-    grid-column-start: 1;
-    grid-column-end: 4;
-
-    span:nth-child(1) {
-        display: inline-block;
-        position: relative;
-        top: 0.25em;
-        color: $green;
-        font-size: 3.5em;
-        
-    }
-
-    span:nth-child(2) {
-        color: rgb(185, 112, 238);
-        font-size: 2em;
-        bottom: 0.8em;
-        display: inline-block;
-        position: relative;
-        top: 0.2em;
-        
-    }
-
-    span:nth-child(3) {
-        display: inline-block;
-        position: relative;
-        color: $yellow;
-        font-size: 2em;
-
-    }
-
-    
-}
-
-.page1 > div {
-    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
 }
 
 .intro {
-    grid-column-start: 4;
-    grid-column-end: 11;
-
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .lettuce-img {
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 7;
     grid-row-start: 2;
+    background-color: black;
 }
 
 .lettuce-img img {
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
 .lettuce-text {
-    grid-column-start: 5;
-    grid-column-end: 11;
+    grid-column-start: 7;
+    grid-column-end: 13;
     grid-row-start: 2;
 }

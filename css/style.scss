@@ -108,6 +108,26 @@ ul {
   background-color: black;
   color: white;
   text-transform: uppercase;
+
+  span:nth-child(1) {
+    color: $green;
+    font-size: 3.5em;
+    
+  }
+
+  span:nth-child(2) {
+    color: rgb(185, 112, 238);
+    font-size: 2em;
+    
+   
+    
+  }
+
+  span:nth-child(3) {
+    color: $yellow;
+    font-size: 2em;
+
+  }
   
   
 }
@@ -133,8 +153,8 @@ ul {
     color: black;
     position: relative;
     text-transform: uppercase;
-    
 
+    
     img {
         display: inline;
         height: 1em;

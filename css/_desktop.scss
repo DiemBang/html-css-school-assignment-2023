@@ -18,18 +18,16 @@ html {
 header {
     margin: 0;
     padding: 0;
-    width: 10em;
     background-color: black;
-    position: fixed;
+    display: flex;
     height: 100%;
     overflow: auto;
-    min-width: 10em;
     padding-top: 2em;
 
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
 
     h1 {
         margin: 0;

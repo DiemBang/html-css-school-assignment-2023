@@ -23,6 +23,7 @@ header {
     height: 100%;
     overflow: auto;
     padding-top: 2em;
+    margin-right: 16px;
 
     grid-column-start: 1;
     grid-column-end: 1;
@@ -41,15 +42,16 @@ header {
     }
 }
 
-.page-1-grid-container {
+.page-1-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 50% 50%;
     height: 100%;
+    margin-right: 16px;
 }
 
 // Common style for all grid items
-.page-1-grid-container > div {
+.page-1-container > div {
     display: flex;
     justify-content: center;
     align-items: center;

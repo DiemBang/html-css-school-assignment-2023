@@ -55,7 +55,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
     overflow: hidden;
 }
 
@@ -63,6 +62,22 @@ header {
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 1;
+
+    span:nth-child(1) {
+        font-size: 5em;
+        
+      }
+    
+      span:nth-child(2) {
+        font-size: 2em;
+        
+      }
+    
+      span:nth-child(3) {
+        font-size: 2em;
+    
+      }
+
 }
 
 .intro {
@@ -70,6 +85,8 @@ header {
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 1;
+    font-size: 2em;
+    padding-left: 16px;
 }
 
 .lettuce-img {
@@ -77,15 +94,21 @@ header {
     grid-column-end: 7;
     grid-row-start: 2;
     background-color: black;
+    margin-right: 16px;
 }
 
 .lettuce-img img {
     width: auto;
     height: 100%;
+    
 }
 
 .lettuce-text {
     grid-column-start: 7;
     grid-column-end: 13;
     grid-row-start: 2;
+    font-size: 2em;
+    padding-left: 16px;
+    
+
 }

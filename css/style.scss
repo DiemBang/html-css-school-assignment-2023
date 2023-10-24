@@ -1,10 +1,18 @@
-@import 'reset';
-@import 'mobile';
+@import '_reset';
+
+@import '_normalize';
+
+//@media screen and (min-width: 320px) {
+  //@import '_mobile';
+//}
+
 
 @media screen and (min-width: 1280px) {
-  // @import 'desktop';
-  
+  @import '_desktop';
 }
+
+$yellow: rgb(242, 230, 51);
+$green: rgb(0, 255, 56);
 
 body {
   background-color: yellow;
@@ -71,7 +79,7 @@ nav {
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   visibility: hidden;
   
-
+  
 }
 
 input:checked + .menu nav {
@@ -94,4 +102,42 @@ ul {
     padding: 0.3em;
   }
 
+}
+
+.page-title {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  
+  
+}
+
+
+.intro {
+  background-color: black;
+  color: $green;
+  
+
+}
+
+.lettuce-img {
+  
+}
+
+
+.lettuce-text {
+  background-color: white;
+  color: rgb(185, 112, 238);
+  
+  p span   {
+    color: black;
+    position: relative;
+    text-transform: uppercase;
+    
+
+    img {
+        display: inline;
+        height: 1em;
+    }
+  }
 }

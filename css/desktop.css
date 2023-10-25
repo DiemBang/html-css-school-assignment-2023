@@ -1,1 +1,0 @@
-body{background-color:#ff0}main{border:2px solid green;display:grid;grid-template-columns:repeat(12, 1fr);gap:16px}header{flex-direction:column}.page1{grid-column:span 11;display:grid;gap:16px}

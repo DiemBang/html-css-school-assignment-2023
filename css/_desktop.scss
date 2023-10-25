@@ -136,10 +136,30 @@ header {
     position: relative;
     z-index: -1;
 
+    .tahini {
         font-size: 2em;
-    
+        color: white;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: $green;
       }
 
+    .drizzle {
+        font-size: 0.5em;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: rgb(185, 112, 238);
+    }
+
+    .chickpeas {
+        font-size: 0.5em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $yellow;
+    }
 }
 
 .intro {

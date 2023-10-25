@@ -129,14 +129,6 @@ header {
     margin-left: 16px;
 }
 
-Common style for all grid items
-.page-1-container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
 .page-title {
     grid-column-start: 2;
     grid-column-end: 6;
@@ -159,10 +151,6 @@ Common style for all grid items
     padding: 18px;
 }
 
-.desktop-flex-line-break {
-    width: 100%;
-}
-
 .lettuce-img {
     grid-column-start: 2;
     grid-column-end: 7;
@@ -176,7 +164,6 @@ Common style for all grid items
 .lettuce-img img {
     width: auto;
     height: 100%;
-    
 }
 
 .lettuce-text {

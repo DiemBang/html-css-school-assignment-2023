@@ -226,3 +226,32 @@ header {
     max-width: 100%;
     height: auto;
 }
+
+.hummus-img {
+    display: none;
+}
+
+.sauces-img {
+    display: none;
+}
+
+.food-row {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.food {
+    width: 100%;
+    display: flex;
+}
+
+.description {
+    width: 100%;
+    display: flex;
+}
+
+.price {
+    display: flex;
+}
+

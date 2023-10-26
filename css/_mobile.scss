@@ -225,6 +225,7 @@ header {
     display: block;
     max-width: 100%;
     height: auto;
+    
 }
 
 .hummus-img {
@@ -239,8 +240,17 @@ header {
     display: flex;
     justify-content: space-between; 
     width: 100%;
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: solid;
+    border-bottom: solid;
 }
 
+.food-and-description {
+    margin-left: 5px;
+}
 .food {
     width: 100%;
     display: flex;
@@ -249,9 +259,12 @@ header {
 .description {
     width: 100%;
     display: flex;
+    font-family: 'Roboto Condensed';
 }
 
 .price {
     display: flex;
+    text-wrap: nowrap;
+    margin-right: 5px;
 }
 

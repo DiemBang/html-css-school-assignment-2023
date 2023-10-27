@@ -95,6 +95,11 @@ header {
     background-color: black;
     top: 0;
     height: 52px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    // align-items: center;
+
 
     h1 {
         color: white;
@@ -254,7 +259,9 @@ header {
 .food {
     width: 100%;
     display: flex;
+
 }
+
 
 .description {
     width: 100%;
@@ -266,5 +273,13 @@ header {
     display: flex;
     text-wrap: nowrap;
     margin-right: 5px;
+}
+
+.menu-item-new,
+.menu-item-vegan,
+.menu-item-popular {
+  font-size: 0.6em;
+  height: 1.5em;
+  margin: 0.4em;;
 }
 

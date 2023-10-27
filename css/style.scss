@@ -53,3 +53,43 @@ body {
     }
   }
 }
+
+.menu-item-new,
+.menu-item-vegan,
+.menu-item-popular {
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+ 
+.menu-item-new {
+  background-color: rgb(185, 112, 238);
+  display: inline-block;
+  padding: 0 12px;
+  transform: rotate(-3deg);
+  span {
+    display: block;
+    transform: rotate(3deg);
+  }
+}
+ 
+.menu-item-vegan {
+  background-color: $green;
+  display: inline-block;
+  padding: 0 12px;
+  transform: rotate(-3deg);
+  span {
+    display: block;
+    transform: rotate(3deg);
+  }
+}
+
+.menu-item-popular {
+  background-color: $yellow;
+  display: inline-block;
+  padding: 0 12px;
+  transform: rotate(-3deg);
+  span {
+    display: block;
+    transform: rotate(3deg);
+  }
+}

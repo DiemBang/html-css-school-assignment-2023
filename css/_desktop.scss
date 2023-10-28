@@ -196,8 +196,71 @@ header {
 
 .page-2-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
+    // height: 100%;
+    margin: 16px;
+}
+
+.image-gallery {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%;
+    height: 20em;
+    
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.chickpeas-img {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    // display: block;
+    // justify-content: center;
+    // overflow: hidden;
     height: 100%;
-    margin-right: 16px;
+    margin-right: 8px;
+}
+
+.hummus-img {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    // display: block;
+    // justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.sauces-img {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    // display: block;
+    // justify-content: center;
+    margin-left: 8px;
+}
+
+.chickpeas-img img,
+.hummus-img img,
+.sauces-img img
+{
+    width: 100%;
+    display: flex;
+    height: auto;
+    overflow:hidden;
+    object-fit: contain;
+}
+
+.food-menu {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    display: grid;
+    // padding-left: calc(100vw/12);
 }

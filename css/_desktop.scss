@@ -195,19 +195,11 @@ header {
 }
 
 .page-2-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    // height: 100%;
     margin: 16px;
+    padding-bottom: 48px;
 }
 
 .image-gallery {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100%;
@@ -215,14 +207,12 @@ header {
     
     overflow: hidden;
     object-fit: cover;
+    margin-bottom: 16px;
 }
 
 .chickpeas-img {
     grid-column-start: 2;
     grid-column-end: 5;
-    // display: block;
-    // justify-content: center;
-    // overflow: hidden;
     height: 100%;
     margin-right: 8px;
 }
@@ -230,8 +220,6 @@ header {
 .hummus-img {
     grid-column-start: 5;
     grid-column-end: 9;
-    // display: block;
-    // justify-content: center;
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -240,8 +228,6 @@ header {
     grid-column-start: 9;
     grid-column-end: 13;
     grid-row-start: 1;
-    // display: block;
-    // justify-content: center;
     margin-left: 8px;
 }
 
@@ -252,7 +238,7 @@ header {
     width: 100%;
     display: flex;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
     object-fit: contain;
 }
 
@@ -264,14 +250,18 @@ header {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    margin-top: auto;
-    padding-top: 16px;
+    padding-left: calc(100vw/12);
 }
 
 .food-row {
     width: 100%;
     display: flex;
-    margin-top: auto;
+    background-color: white;
+    color: black;
+    margin-bottom: 5px;
+    border-top: solid;
+    border-bottom: solid;
+    padding: 0.3em;
 }
 
 .food-and-description {
@@ -282,14 +272,26 @@ header {
 
 .food {
     width: 40%;
-    padding-left: calc(100vw/12);
+    font-size: 1.6em;
 }
 
 .description {
     width: 60%;
+    font-family: 'Roboto Condensed';
+    font-size: 1.2em;
 }
 
 .price {
     width: 10%;
     text-align: right;
+    font-size: 1.6em;
+}
+
+.menu-item-new,
+.menu-item-vegan,
+.menu-item-popular {
+    position: absolute;
+    font-size: 0.5em;
+    height: 1.5em;
+    margin: 0.8em;;
 }

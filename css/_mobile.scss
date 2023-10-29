@@ -293,13 +293,13 @@ header {
 .contact-info .bg {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 25%;
+    width: 50%;
     height: 100%;
     background-image: url('../assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    filter: blur(8px);
+    filter: blur(3px);
 }
 
 .contact-info .text {
@@ -307,5 +307,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem;
+    font-size: 0.7rem;
+    color: rgb(75, 163, 240);
+    text-shadow: 2px 2px black;
 }

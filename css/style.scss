@@ -62,23 +62,25 @@ body {
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
 }
- 
+
 .menu-item-new {
   background-color: rgb(185, 112, 238);
   display: inline-block;
   padding: 0 12px;
   transform: rotate(-3deg);
+
   span {
     display: block;
     transform: rotate(3deg);
   }
 }
- 
+
 .menu-item-vegan {
   background-color: $green;
   display: inline-block;
   padding: 0 12px;
   transform: rotate(-3deg);
+
   span {
     display: block;
     transform: rotate(3deg);
@@ -90,6 +92,7 @@ body {
   display: inline-block;
   padding: 0 12px;
   transform: rotate(-3deg);
+
   span {
     display: block;
     transform: rotate(3deg);
@@ -98,5 +101,56 @@ body {
 
 .page-3-container {
   background-color: white;
+  padding-top: 16px;
 }
 
+.form-box {
+  background-color: $green;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+form {
+  text-transform: uppercase;
+
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+
+  label span {
+    display: inline-block;
+    text-align: left;
+    width: 80px;
+  }
+}
+
+.contact-info {
+  background-color: $green;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}

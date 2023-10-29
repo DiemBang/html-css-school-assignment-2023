@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
 </head>
 
@@ -133,18 +136,40 @@
     </div>
 
     <div class="page-3-container">
-      <h2>Book your table</h2>
+      <div class="form-box">
+        <h2>Book your table</h2>
+        <form>
+          <label for="name">
+            <span>Name</span>
+            <input type="text" autocomplete="given-name" id="name" name="name"><br>
+          </label>
+          <label for="email">Email</label>
+          <input type="email" required autocomplete="email" id="email" name="email"><br>
+          <label for="date">Date</label>
+          <input type="text" id="date" name="date"><br>
+          <label for="party">Party size</label>
+          <input type="text" id="party" name="party"><br>
+          <label for="allergies">Allergies</label>
+          <input type="text" id="allergies" name="allergies"><br>
+          <input type="reset" value="Cancel">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 
       <div class="contact-info"> <!--background image + icons-->
         <div class="bg"></div>
         <div class="text">
           <ul>
-            <li>+46 8 123 45 67</li>
-            <li>book@toughcookie.com</li>
-            <li>Brända Tomten 113 31 Stockholm</li>
+            <li><span class="material-symbols-outlined">
+            call</span>+46 8 123 45 67</li>
+            <li><span class="material-symbols-outlined">
+            alternate_email</span>book@toughcookie.com</li>
+            <li><span class="material-symbols-outlined">
+            location_on</span>Brända Tomten 113 31 Stockholm</li>
           </ul>
         </div>
       </div>
+    </div>
 
   </main>
   <!-- <footer>

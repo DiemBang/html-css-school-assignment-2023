@@ -21,66 +21,67 @@ button {
     top: 10px;
     z-index: 15;
     pointer-events: none;
-  }
-  
-  button span {
+}
+
+button span {
     display: block;
     width: 25px;
     height: 3px;
     background-color: yellow;
     border-radius: 6px;
     margin-bottom: 4px;
-  }
-  
-  input {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 12;
-    width: 35px;
-    height: 35px;
-    opacity: 0;
-  } 
-  
-  input:checked + .menu button span {
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  input:checked + .menu button span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  input:checked + .menu button span:nth-child(1) {
-    transform: rotate(45deg);
-  }
-  
-  input:checked + .menu button span:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: calc(100vw/12);
-    background-color: rgba($color: rgb(185, 112, 238), $alpha: 1);
-    color: white;
-    width: 100vw;
-    height: 100vh;
-    opacity: 1;
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    visibility: hidden;
-    z-index: 100;
-    
-    
-  }
-  
-  input:checked + .menu nav {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  ul {
+}
+
+.hamburger-menu {
+
+    input {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 12;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+    }
+
+    input:checked+.menu button span {
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+
+    input:checked+.menu button span:nth-child(2) {
+        opacity: 0;
+    }
+
+    input:checked+.menu button span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    input:checked+.menu button span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .menu nav {
+        position: fixed;
+        top: 0;
+        left: calc(100vw/12);
+        background-color: rgba($color: rgb(185, 112, 238), $alpha: 1);
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        visibility: hidden;
+        z-index: 100;
+    }
+
+    input:checked + .menu nav {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -89,13 +90,13 @@ button {
     height: 100%;
     justify-content: center;
     text-align: center;
-  
+
     li {
-      font-size: 2em;
-      padding: 0.3em;
+        font-size: 2em;
+        padding: 0.3em;
     }
-  
-  }
+
+}
 
 header {
     margin: 0;
@@ -142,7 +143,7 @@ header {
         left: 30%;
         top: 30%;
         color: $green;
-      }
+    }
 
     .drizzle {
         font-size: 0.4em;
@@ -204,7 +205,7 @@ header {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100%;
     height: 20em;
-    
+
     overflow: hidden;
     object-fit: cover;
     margin-bottom: 16px;
@@ -233,8 +234,7 @@ header {
 
 .chickpeas-img img,
 .hummus-img img,
-.sauces-img img
-{
+.sauces-img img {
     width: 100%;
     display: flex;
     height: auto;
@@ -293,5 +293,6 @@ header {
     position: absolute;
     font-size: 0.5em;
     height: 1.5em;
-    margin: 0.8em;;
+    margin: 0.8em;
+    z-index: 0;
 }

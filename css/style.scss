@@ -52,6 +52,10 @@ body {
   }
 }
 
+.food {
+  text-transform: uppercase;
+}
+
 .menu-item-new,
 .menu-item-vegan,
 .menu-item-popular {
@@ -91,3 +95,8 @@ body {
     transform: rotate(3deg);
   }
 }
+
+.page-3-container {
+  background-color: white;
+}
+

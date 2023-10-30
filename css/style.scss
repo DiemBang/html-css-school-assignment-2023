@@ -123,7 +123,7 @@ form {
   label span {
     display: inline-block;
     text-align: left;
-    width: 80px;
+    width: 120px;
   }
 }
 
@@ -153,4 +153,8 @@ form {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
+}
+
+footer {
+  background-color: rgb(185, 112, 238);
 }

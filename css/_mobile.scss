@@ -1,7 +1,7 @@
 $yellow: rgb(242, 230, 51);
 $green: rgb(0, 255, 56);
 
-button {
+.menu button {
     width: 35px;
     height: 35px;
     background: transparent;
@@ -13,7 +13,7 @@ button {
     pointer-events: none;
 }
 
-button span {
+.menu button span {
     display: block;
     width: 25px;
     height: 3px;
@@ -283,6 +283,21 @@ header {
     ;
 }
 
+.form-box {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+}
+
+form {
+    text-transform: uppercase;
+  
+    label {
+      font-size: 1.5em;
+    }
+  }
 
 .contact-info {
     min-height: 300px;
@@ -293,8 +308,8 @@ header {
 .contact-info .bg {
     position: absolute;
     top: 0;
-    left: 25%;
-    width: 50%;
+    left: 5%;
+    width: 90%;
     height: 100%;
     background-image: url('../assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg');
     background-size: cover;
@@ -307,7 +322,18 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: rgb(75, 163, 240);
     text-shadow: 2px 2px black;
+    width: 100%;
+    
+    li {
+        text-align: left;
+        padding-left: 10%;
+
+    }
+        span {
+            padding-right: 16px;
+
+        }
 }

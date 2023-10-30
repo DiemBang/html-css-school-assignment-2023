@@ -300,17 +300,18 @@ form {
   }
 
 .contact-info {
-    min-height: 300px;
-    min-width: 300px;
-    position: relative;
+    background-color: $green;
+    min-height: 50%;
+    min-width: 100vw;
+    position: absolute;
 }
 
 .contact-info .bg {
     position: absolute;
-    top: 0;
+    top: 5%;
+    bottom: 5%;
     left: 5%;
-    width: 90%;
-    height: 100%;
+    right: 5%;
     background-image: url('../assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg');
     background-size: cover;
     background-position: center;

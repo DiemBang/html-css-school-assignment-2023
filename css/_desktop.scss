@@ -2,7 +2,6 @@ $yellow: rgb(242, 230, 51);
 $green: rgb(0, 255, 56);
 
 body {
-    background-color: $yellow;
     margin: 0;
     height: 100vh;
 }
@@ -177,7 +176,6 @@ header {
     grid-column-start: 2;
     grid-column-end: 7;
     grid-row-start: 2;
-    background-color: black;
     margin-right: 16px;
     display: flex;
     justify-content: center;
@@ -313,7 +311,6 @@ header {
     grid-column-end: 7;
     background-color: $green;
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     width: 100%;
 }

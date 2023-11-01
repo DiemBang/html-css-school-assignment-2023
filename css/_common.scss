@@ -2,7 +2,7 @@ $yellow: rgb(242, 230, 51);
 $green: rgb(0, 255, 56);
 
 body {
-  background-color: yellow;
+  background-color: $yellow;
   font-family: 'Jockey One', 'Roboto Condensed';
 }
 
@@ -180,7 +180,6 @@ footer {
   
   .buttons {
     width: 100%;
-    // margin-left: 30%;
     padding-left: 1em;
     padding-right: 1em;
 

@@ -186,13 +186,18 @@ footer {
 
   .footer-text {
     width: 100%;
-    text-align: right;
+    padding-left: 15%;
+    font-size: 1.1em;
+    font-family: 'Roboto';
     
   }
   
   .buttons {
     width: 70%;
     margin-left: 30%;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.75em;
 
     .decline {
       background-color: $yellow;

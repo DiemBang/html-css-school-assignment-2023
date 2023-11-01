@@ -6,6 +6,70 @@ body {
   font-family: 'Jockey One', 'Roboto Condensed';
 }
 
+.menu button {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 0;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    pointer-events: none;
+}
+
+.menu button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $yellow;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+
+.hamburger-menu {
+
+    input {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+    }
+
+    input:checked+.menu button span {
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+
+    input:checked+.menu button span:nth-child(2) {
+        opacity: 0;
+    }
+
+    input:checked+.menu button span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    input:checked+.menu button span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .menu nav {
+        position: fixed;
+        background-color: rgba($color: rgb(185, 112, 238), $alpha: 1);
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        visibility: hidden;
+    }
+
+    input:checked+.menu nav {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
 .page-title {
   background-color: black;

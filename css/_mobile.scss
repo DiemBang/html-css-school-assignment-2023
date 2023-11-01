@@ -98,8 +98,6 @@ header {
     margin-right: 0;
 }
 
-.chickpeas-img {}
-
 .chickpeas-img img {
     display: block;
     width: 100%;
@@ -115,15 +113,8 @@ header {
 }
 
 .food-row {
-    display: flex;
     justify-content: space-between;
-    width: 100%;
-    background-color: white;
-    color: black;
     margin-top: 5px;
-    margin-bottom: 5px;
-    border-top: solid;
-    border-bottom: solid;
 }
 
 .food-and-description {
@@ -157,7 +148,6 @@ header {
 }
 
 .page-3-container {
-    background-color: white;
     padding-top: 16px;
 }
 
@@ -170,31 +160,16 @@ header {
 }
 
 form {
-    text-transform: uppercase;
 
     label {
         font-size: 1.5em;
     }
-
 }
 
 .contact-info {
-    background-color: $green;
     min-height: 50%;
     min-width: 100vw;
     position: absolute;
-}
-
-.contact-info .bg {
-    position: absolute;
-    top: 5%;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
-    background-image: url('../assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(3px);
 }
 
 .contact-info .text {
@@ -228,7 +203,7 @@ footer {
     .footer-text {
         padding-left: 10%;
     }
-    
+
     .buttons {
         font-size: 1.3em;
     }

@@ -164,13 +164,6 @@ header {
 }
 
 .food-row {
-    width: 100%;
-    display: flex;
-    background-color: white;
-    color: black;
-    margin-bottom: 5px;
-    border-top: solid;
-    border-bottom: solid;
     padding: 0.3em;
 }
 
@@ -208,7 +201,6 @@ header {
 }
 
 .page-3-container {
-    background-color: white;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     height: 100%;
@@ -241,11 +233,12 @@ form {
     label {
         font-size: 2em;
         text-wrap: nowrap;
-
-        span {
-            min-width: 5em;
-        }
     }
+
+    label span {
+        min-width: 5em;
+    }
+
 }
 
 .contact-info-container {
@@ -260,22 +253,9 @@ form {
 .contact-info {
     grid-column-start: 8;
     grid-column-end: 13;
-    background-color: $green;
     position: relative;
     height: 30em;
     width: 35em;
-}
-
-.contact-info .bg {
-    position: absolute;
-    top: 5%;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
-    background-image: url('../assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(3px);
 }
 
 .contact-info .text {
@@ -314,7 +294,7 @@ footer {
     .footer-text {
         padding-left: 15%;
     }
-    
+
     .buttons {
         font-size: 1.75em;
         margin-left: 30%;

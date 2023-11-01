@@ -61,7 +61,7 @@ $green: rgb(0, 255, 56);
         opacity: 1;
         transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
         visibility: hidden;
-        z-index: 10;
+        z-index: 15;
     }
     
     input:checked+.menu nav {
@@ -95,11 +95,6 @@ header {
     background-color: black;
     top: 0;
     height: 52px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: center;
-
 
     h1 {
         color: white;
@@ -277,9 +272,9 @@ header {
 }
 
 .page-3-container {
-    background-color: white;
-    padding-top: 16px;
-  }
+  background-color: white;
+  padding-top: 16px;
+}
 
 .form-box {
     position: relative;

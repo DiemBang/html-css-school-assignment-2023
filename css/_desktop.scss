@@ -69,6 +69,7 @@ header {
     z-index: -1;
 
     .tahini {
+        font-size: 7em;
         left: 30%;
         top: 30%;
     }
@@ -260,16 +261,9 @@ form {
 
 .contact-info .text {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 1rem;
-    color: rgb(75, 163, 240);
-    text-shadow: 2px 2px black;
-    width: 100%;
 
     li {
-        text-align: left;
         padding-left: 15%;
         padding-right: 15%;
         vertical-align: middle;
@@ -284,7 +278,6 @@ form {
     span {
         padding-right: 18px;
         font-size: 1.5em;
-        // vertical-align: middle;
     }
 
 }

@@ -96,7 +96,6 @@ ul {
     text-transform: uppercase;
 
     .tahini {
-        font-size: 5em;
         position: absolute;
         color: $green;
     }
@@ -296,6 +295,24 @@ form {
     filter: blur(3px);
 }    
 
+.contact-info .text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(75, 163, 240);
+    text-shadow: 2px 2px black;
+    width: 100%;
+
+    li {
+        text-align: left;
+    }
+
+    .contact-text {
+        display: inline-block;
+    }
+
+}
+
 footer {
     background-color: rgb(185, 112, 238);
     color: white;
@@ -327,7 +344,6 @@ footer {
         }
     }
 
-
     button {
         text-transform: uppercase;
         border-radius: 8px;
@@ -336,5 +352,4 @@ footer {
         padding-left: 1em;
         padding-right: 1em;
     }
-
 }

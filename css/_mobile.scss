@@ -57,6 +57,7 @@ header {
 
 
     .tahini {
+        font-size: 5em;
         left: 50%;
         top: 50%;
         translate: -50% -50%;
@@ -174,16 +175,9 @@ form {
 
 .contact-info .text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 0.9rem;
-    color: rgb(75, 163, 240);
-    text-shadow: 2px 2px black;
-    width: 100%;
 
     li {
-        text-align: left;
         padding-left: 10%;
 
     }
@@ -191,10 +185,6 @@ form {
     span {
         padding-right: 16px;
 
-    }
-
-    .contact-text {
-        display: inline-block;
     }
 }
 

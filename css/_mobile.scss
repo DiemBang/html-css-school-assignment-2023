@@ -111,9 +111,7 @@ header {
 }
 
 .page-1-container {
-    //position: absolute;
     width: 100vw;
-    // padding-top: 16px;
     margin-top: 52px+16px;
     background-color: $yellow;
     color: white;
@@ -198,13 +196,11 @@ header {
     padding: 1em;
     height: 100%;
     padding: 1em;
-    // margin-left: 8px;
-    // margin-right: 8px;
+    
 }
 
 .lettuce-text {
     display: block;
-    //flex-direction: column;
     margin-top: 16px;
     margin-bottom: 16px;
     padding: 1em;
@@ -228,7 +224,6 @@ header {
     display: block;
     width: 100%;
     height: auto;
-
 }
 
 .hummus-img {
@@ -258,7 +253,6 @@ header {
 .food {
     width: 100%;
     display: flex;
-
 }
 
 
@@ -280,8 +274,12 @@ header {
     font-size: 0.6em;
     height: 1.5em;
     margin: 0.4em;
-    ;
 }
+
+.page-3-container {
+    background-color: white;
+    padding-top: 16px;
+  }
 
 .form-box {
     position: relative;
@@ -297,7 +295,8 @@ form {
     label {
       font-size: 1.5em;
     }
-  }
+
+}
 
 .contact-info {
     background-color: $green;

@@ -24,7 +24,7 @@
       <input type="checkbox">
 
       <div class="menu">
-        <button>
+        <button aria-label="Open menu">
           <span></span>
           <span></span>
           <span></span>
@@ -139,48 +139,50 @@
     </div>
 
     <div class="page-3-container">
-
-      <div class="form-box">
-        <h2>Book your table</h2>
-        <form>
-          <label for="name">
-            <span>Name</span>
-            <input type="text" autocomplete="given-name" id="name" name="name"><br>
-          </label>
-          <label for="email">
-            <span>Email</span>
-            <input type="email" required autocomplete="email" id="email" name="email"><br>
-          </label>
-          <label for="date">
-            <span>Date</span>
-            <input type="text" id="date" name="date"><br>
-          </label>
-          <label for="party">
-            <span>Party size</span>
-            <input type="text" id="party" name="party"><br>
-          </label>
-          <label for="allergies">
-            <span>Allergies</span>
-            <input type="text" id="allergies" name="allergies"><br>
-          </label>
-          <input class="button-cancel" type="reset" value="Cancel">
-          <input class="button-request" type="submit" value="Request">
-        </form>
+      <div class="form-box-container">
+        <div class="form-box">
+          <h2>Book your table</h2>
+          <form>
+            <label for="name">
+              <span>Name</span>
+              <input type="text" autocomplete="given-name" id="name" name="name"><br>
+            </label>
+            <label for="email">
+              <span>Email</span>
+              <input type="email" required autocomplete="email" id="email" name="email"><br>
+            </label>
+            <label for="date">
+              <span>Date</span>
+              <input type="text" id="date" name="date"><br>
+            </label>
+            <label for="party">
+              <span>Party size</span>
+              <input type="text" id="party" name="party"><br>
+            </label>
+            <label for="allergies">
+              <span>Allergies</span>
+              <input type="text" id="allergies" name="allergies"><br>
+            </label>
+            <input class="button-cancel" type="reset" value="Cancel">
+            <input class="button-request" type="submit" value="Request">
+          </form>
+        </div>
       </div>
 
-
-      <div class="contact-info">
-        <div class="bg"></div>
-        <div class="text">
-          <ul>
-            <li><span class="material-symbols-outlined">
-                call</span>+46 8 123 45 67</li>
-            <li><span class="material-symbols-outlined">
-                alternate_email</span>book@toughcookie.com</li>
-            <li><span class="material-symbols-outlined">
-                location_on</span>Brända Tomten, 113 31 Stockholm
-            </li>
-          </ul>
+      <div class="contact-info-container">
+        <div class="contact-info">
+          <div class="bg"></div>
+          <div class="text">
+            <ul>
+              <li><span class="material-symbols-outlined">
+                  call</span>+46 8 123 45 67</li>
+              <li><span class="material-symbols-outlined">
+                  alternate_email</span>book@toughcookie.com</li>
+              <li><span class="material-symbols-outlined">
+                  location_on</span>Brända Tomten, 113 31 Stockholm
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

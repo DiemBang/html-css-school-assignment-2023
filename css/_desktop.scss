@@ -296,3 +296,88 @@ header {
     margin: 0.8em;
     z-index: 0;
 }
+
+.page-3-container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100%;
+    width: 100vw;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.form-box-container {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    background-color: $green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-box {
+    padding-left: 16px;
+    align-self: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+form {
+    
+    label {
+      font-size: 1.5rem;
+    }
+
+}
+
+.contact-info-container {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    background-color: $green;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    grid-column-start: 8;
+    grid-column-end: 13;
+    background-color: $green;
+    position: relative;
+    height: 30em;
+    width: 40em;
+}
+
+.contact-info .bg {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background-image: url('../assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+}
+
+.contact-info .text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: rgb(75, 163, 240);
+    text-shadow: 2px 2px black;
+    width: 100%;
+    
+    li {
+        text-align: left;
+        padding-left: 10%;
+
+    }
+}

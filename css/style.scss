@@ -99,10 +99,6 @@ body {
   }
 }
 
-.page-3-container {
-  background-color: white;
-  padding-top: 16px;
-}
 
 .form-box {
   background-color: $green;
@@ -137,7 +133,6 @@ form {
     border-radius: 8px;
     border: none;
     width: 20%;
-    height: 20%;
   }
 
   .button-request {
@@ -185,7 +180,8 @@ footer {
   display: flex;
 
   .footer-text {
-    width: 50%;
+    width: 100%;
+    text-align: right;
     
   }
   

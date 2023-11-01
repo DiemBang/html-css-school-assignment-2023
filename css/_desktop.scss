@@ -75,7 +75,7 @@ main {
         z-index: 100;
     }
 
-    input:checked + .menu nav {
+    input:checked+.menu nav {
         visibility: visible;
         opacity: 1;
     }
@@ -325,15 +325,19 @@ header {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 form {
-    
-    label {
-      font-size: 1.5rem;
-    }
 
+    label {
+        font-size: 2em;
+        text-wrap: nowrap;
+
+        span {
+            min-width: 5em;
+        }
+    }
 }
 
 .contact-info-container {
@@ -375,7 +379,7 @@ form {
     color: rgb(75, 163, 240);
     text-shadow: 2px 2px black;
     width: 100%;
-    
+
     li {
         text-align: left;
         padding-left: 15%;
@@ -387,7 +391,7 @@ form {
         display: inline-block;
         text-wrap: wrap;
         width: 50%;
-     }
+    }
 
     span {
         padding-right: 18px;

@@ -63,7 +63,7 @@ $green: rgb(0, 255, 56);
         visibility: hidden;
         z-index: 15;
     }
-    
+
     input:checked+.menu nav {
         visibility: visible;
         opacity: 1;
@@ -191,7 +191,7 @@ header {
     padding: 1em;
     height: 100%;
     padding: 1em;
-    
+
 }
 
 .lettuce-text {
@@ -272,8 +272,8 @@ header {
 }
 
 .page-3-container {
-  background-color: white;
-  padding-top: 16px;
+    background-color: white;
+    padding-top: 16px;
 }
 
 .form-box {
@@ -286,9 +286,9 @@ header {
 
 form {
     text-transform: uppercase;
-  
+
     label {
-      font-size: 1.5em;
+        font-size: 1.5em;
     }
 
 }
@@ -321,14 +321,19 @@ form {
     color: rgb(75, 163, 240);
     text-shadow: 2px 2px black;
     width: 100%;
-    
+
     li {
         text-align: left;
         padding-left: 10%;
 
     }
-        span {
-            padding-right: 16px;
 
-        }
+    span {
+        padding-right: 16px;
+
+    }
+
+    .contact-text {
+        display: inline-block;
+    }
 }

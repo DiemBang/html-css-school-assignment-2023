@@ -224,6 +224,7 @@ header {
     padding-left: 16px;
     align-self: center;
     width: 100%;
+    font-size: 1.2em;
 }
 
 h2 {
@@ -242,7 +243,7 @@ form {
     }
 
     input {
-        width: 12em;
+        width: 10em;
     }
 
     .button-cancel, .button-request {
@@ -265,7 +266,7 @@ form {
     grid-column-end: 13;
     position: relative;
     height: 30em;
-    width: 35em;
+    width: calc(100vw*5/12);
 }
 
 .contact-info .text {
@@ -295,7 +296,7 @@ footer {
 
     .footer-text {
         padding-left: 15%;
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     .buttons {

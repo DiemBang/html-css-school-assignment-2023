@@ -5,6 +5,12 @@ $green: rgb(0, 255, 56);
     z-index: 2;
 }
 
+.menu button span {
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+}
+
 .hamburger-menu {
     input {
         z-index: 1;

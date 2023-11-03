@@ -160,10 +160,22 @@ header {
     padding: 16px;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 form {
 
     label {
         font-size: 1.5em;
+    }
+
+    input {
+        width: 12em;
+    }
+
+    .button-cancel, .button-request {
+        width: 5em;
     }
 }
 
@@ -179,22 +191,24 @@ form {
 
     li {
         padding-left: 10%;
+        font-size: 1.5em;
 
     }
 
     span {
         padding-right: 16px;
-
     }
+
 }
 
 footer {
 
     .footer-text {
-        padding-left: 10%;
+        padding-left: 5%;
+        font-size: 0.8em;
     }
 
     .buttons {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 }

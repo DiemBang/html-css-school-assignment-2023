@@ -140,6 +140,10 @@ ul {
             display: inline;
             height: 1em;
         }
+
+        a {
+            text-decoration: none;
+        }
     }
 }
 
@@ -325,15 +329,12 @@ footer {
 
     .footer-text {
         width: 100%;
-        font-size: 1.1em;
         font-family: 'Roboto';
 
     }
 
     .buttons {
-        width: 100%;
-        padding-left: 1em;
-        padding-right: 1em;
+        width: 75%;
 
         .decline {
             background-color: $yellow;
@@ -349,7 +350,5 @@ footer {
         border-radius: 8px;
         border: none;
         width: 45%;
-        padding-left: 1em;
-        padding-right: 1em;
     }
 }

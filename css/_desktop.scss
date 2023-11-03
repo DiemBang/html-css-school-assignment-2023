@@ -56,7 +56,7 @@ header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 50% 50%;
-    height: 100%;
+    height: 100vh;
     margin-right: 16px;
     margin-left: 16px;
 }
@@ -80,7 +80,7 @@ header {
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 1;
-    font-size: 2em;
+    font-size: 3em;
     padding: 18px;
 }
 
@@ -102,20 +102,21 @@ header {
     grid-column-start: 7;
     grid-column-end: 13;
     grid-row-start: 2;
-    font-size: 2em;
+    font-size: 3em;
     padding-left: 16px;
 }
 
 .page-2-container {
     margin: 16px;
     padding-bottom: 48px;
+    height: 100vh;
 }
 
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100%;
-    height: 20em;
+    height: 28em;
 
     overflow: hidden;
     object-fit: cover;
@@ -176,19 +177,19 @@ header {
 
 .food {
     width: 40%;
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 .description {
     width: 60%;
     font-family: 'Roboto Condensed';
-    font-size: 1.2em;
+    font-size: 1.6em;
 }
 
 .price {
     width: 10%;
     text-align: right;
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 .menu-item-new,
@@ -204,7 +205,7 @@ header {
 .page-3-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     margin-right: 16px;
     margin-left: 16px;
@@ -238,6 +239,14 @@ form {
 
     label span {
         min-width: 5em;
+    }
+
+    input {
+        width: 12em;
+    }
+
+    .button-cancel, .button-request {
+        width: 8em;
     }
 
 }
@@ -286,6 +295,7 @@ footer {
 
     .footer-text {
         padding-left: 15%;
+        font-size: 1.1em;
     }
 
     .buttons {

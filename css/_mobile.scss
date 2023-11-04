@@ -2,6 +2,10 @@ $yellow: rgb(242, 230, 51);
 $green: rgb(0, 255, 56);
 
 .menu button {
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    top: 10px;
     z-index: 2;
 }
 
@@ -13,6 +17,10 @@ $green: rgb(0, 255, 56);
 
 .hamburger-menu {
     input {
+        top: 10px;
+        left: 10px;
+        width: 35px;
+        height: 35px;
         z-index: 1;
     }
 
@@ -40,6 +48,7 @@ header {
         text-transform: uppercase;
         letter-spacing: 0.3em;
         margin: 0;
+        padding-left: 1em;
     }
 }
 

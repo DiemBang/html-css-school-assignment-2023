@@ -11,6 +11,11 @@ main {
 }
 
 .menu button {
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: calc(100vw/24);
+    transform: translate(-50%, 0);
     z-index: 15;
 }
 
@@ -23,6 +28,9 @@ main {
 .hamburger-menu {
 
     input {
+        top: 20px;
+        width: 40px;
+        height: 40px;
         z-index: 12;
     }
 
@@ -42,7 +50,6 @@ header {
     position: fixed;
     height: 100%;
     overflow: auto;
-    padding-top: 2em;
     margin-right: 16px;
     width: calc(100vw/12);
     z-index: 10;

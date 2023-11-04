@@ -1,6 +1,5 @@
 header {
     h1 {
-        // padding-left: 20%;
         font-size: 2em;
     }
 }
@@ -15,19 +14,15 @@ header {
 }
 
 form {
-
     label {
         font-size: 1.8em;
     }
-
     input {
         width: 8em;
     }
-
     .button-cancel, .button-request {
         width: 6em;
     }
-
 }
 
 .contact-info .text {

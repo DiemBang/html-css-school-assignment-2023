@@ -7,14 +7,15 @@ body {
 }
 
 .menu button {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background: transparent;
     border: 0;
     position: fixed;
-    left: 10px;
-    top: 10px;
+    top: 20px;
     pointer-events: none;
+    left: calc(100vw/24);
+    transform: translate(-50%, 0);
 }
 
 .menu button span {
@@ -27,11 +28,13 @@ body {
 
     input {
         position: fixed;
-        top: 10px;
-        left: 10px;
-        width: 35px;
-        height: 35px;
+        top: 20px;
+        // left: 10px;
+        width: 40px;
+        height: 40px;
         opacity: 0;
+        left: calc(100vw/24);
+        transform: translate(-50%, 0);
     }
 
     input:checked+.menu button span {

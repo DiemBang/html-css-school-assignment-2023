@@ -2,8 +2,13 @@
 <html lang="en">
 
 <head>
+  <meta property="og:title" content="Tough Cookie - a Lebanese restaurant">
+  <meta property="og:description"
+    content="A cosy neighbourhood restaurant in the south of Stockholm serving delicious and authentic Lebanese food.">
+  <meta property="og:image" content="assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash-800x1000.jpg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="rgb(185, 112, 238)">
   <title>Tough Cookie</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
@@ -19,28 +24,28 @@
 
 <body>
   <header>
-      <h1>Tough Cookie</h1>
-      <div class="hamburger-menu">
-        <input type="checkbox">
+    <h1>Tough Cookie</h1>
+    <div class="hamburger-menu">
+      <input type="checkbox">
 
-        <div class="menu">
-          <button aria-label="Open menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav>
-            <ul>
-              <li>Home</li>
-              <li>Menu</li>
-              <li>Book table</li>
-            </ul>
-          </nav>
-        </div>
+      <div class="menu">
+        <button aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Book table</li>
+          </ul>
+        </nav>
       </div>
+    </div>
   </header>
   <main>
-    <div class="page-1-container">
+    <div class="page-1-container" tabindex="0">
       <div class="page-title">
         <div class="tahini">
           Tahini
@@ -55,36 +60,45 @@
           bite sized ghost pepper one bowl mediterranean luxury bowl cayenne Thai sun pepper.</p>
       </div>
       <div class="lettuce-img">
-        <img src="assets/photos/mae-mu-hugb85v0J04-unsplash-1000x800.jpg" alt="green butterhead lettuce" width="1000"
-          height="800" loading="lazy">
+        <figure>
+          <img src="assets/photos/mae-mu-hugb85v0J04-unsplash-1000x800.jpg" alt="green butterhead lettuce" width="1000"
+            height="800" loading="lazy">
           <div class="arrow">
             <img src="assets/icons/arrow.svg" alt="" width="72" height="59">
           </div>
+        </figure>
       </div>
       <!-- <img src="assets/icons/arrow.svg" alt="arrow icon"> -->
       <div class="lettuce-text">
         <p>Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries roasted butternut
           squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette heat mint potato chocolate
           cookie seeds samosa walnut mushroom tart.</p>
-        <p><span><a href="#page-2">Explore menu </a><img src="assets/icons/arrow2.svg" alt="arrow icon"></span></p>
+        <p><span tabindex="0"><a href="#page-2">Explore menu </a><img src="assets/icons/arrow2.svg"
+              alt="arrow icon"></span></p>
         <!--Link to menu page-->
       </div>
     </div>
 
-    <div class="page-2-container" id="page-2">
+    <div class="page-2-container" id="page-2" tabindex="0">
       <div class="image-gallery">
         <div class="chickpeas-img">
-          <img src="assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash-800x1000.jpg" alt="chickpeas salad in a bowl"
-            width="800" height="1000" loading="lazy">
+          <figure>
+            <img src="assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash-800x1000.jpg" alt="chickpeas salad in a bowl"
+              width="800" height="1000" loading="lazy">
+          </figure>
         </div>
         <div class="hummus-img">
-          <img src="assets/photos/kao-rodriguez-IeTzHiuepmU-unsplash-1035x800.jpg"
-            alt="a bowl of hummus with bread on the side" width="1035" height="800" loading="lazy">
+          <figure>
+            <img src="assets/photos/kao-rodriguez-IeTzHiuepmU-unsplash-1035x800.jpg"
+              alt="a bowl of hummus with bread on the side" width="1035" height="800" loading="lazy">
+          </figure>
         </div>
         <div class="sauces-img">
-          <img src="assets/photos/mor-shani-kQloRmVQYIs-unsplash-800x1067.jpg"
-            alt="two bowls with tsatsiki dipping sauce and a plate of chickpeas" width="800" height="1067"
-            loading="lazy">
+          <figure>
+            <img src="assets/photos/mor-shani-kQloRmVQYIs-unsplash-800x1067.jpg"
+              alt="two bowls with tsatsiki dipping sauce and a plate of chickpeas" width="800" height="1067"
+              loading="lazy">
+          </figure>
         </div>
       </div>
 
@@ -141,7 +155,7 @@
       </div>
     </div>
 
-    <div class="page-3-container">
+    <div class="page-3-container" tabindex="0">
       <div class="form-box-container">
         <div class="form-box">
           <h2>Book your table</h2>

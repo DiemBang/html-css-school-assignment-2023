@@ -1,0 +1,234 @@
+$yellow: rgb(242, 230, 51);
+$green: rgb(0, 255, 56);
+
+.menu button {
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+.menu button span {
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+}
+
+.hamburger-menu {
+    input {
+        top: 10px;
+        left: 10px;
+        width: 35px;
+        height: 35px;
+        z-index: 1;
+    }
+
+
+    .menu nav {
+        top: 52px;
+        left: 0;
+        z-index: 15;
+    }
+
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 2px;
+    background-color: black;
+    top: 0;
+    height: 52px;
+
+    h1 {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        margin: 0;
+        padding-left: 1em;
+    }
+}
+
+.page-1-container {
+    width: 100vw;
+    margin-top: 52px+16px;
+    background-color: $yellow;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.page-title {
+    width: 100%;
+    height: 10em;
+    padding: 0.1em;
+    text-align: center;
+    position: relative;
+
+
+    .tahini {
+        font-size: 5em;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    height: 100%;
+    padding: 1em;
+
+}
+
+.lettuce-img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.arrow {
+    display: none;
+}
+
+.lettuce-text {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 1em;
+    position: relative;
+}
+
+.page-2-container {
+    width: 100vw;
+    margin-top: 0;
+    background-color: $yellow;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.chickpeas-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hummus-img {
+    display: none;
+}
+
+.sauces-img {
+    display: none;
+}
+
+.food-row {
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.food-and-description {
+    margin-left: 5px;
+}
+
+.food {
+    width: 100%;
+    display: flex;
+}
+
+
+.description {
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto Condensed';
+}
+
+.price {
+    display: flex;
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.menu-item-new,
+.menu-item-vegan,
+.menu-item-popular {
+    font-size: 0.6em;
+    height: 1.5em;
+    margin: 0.4em;
+}
+
+.page-3-container {
+    padding-top: 16px;
+}
+
+.form-box {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+form {
+
+    label {
+        font-size: 1.5em;
+    }
+
+    input {
+        width: 12em;
+    }
+
+    .button-cancel,
+    .button-request {
+        width: 5em;
+    }
+}
+
+.contact-info {
+    min-height: 50%;
+    min-width: 100vw;
+    position: absolute;
+}
+
+.contact-info .text {
+    position: absolute;
+    font-size: 0.9rem;
+
+    li {
+        padding-left: 10%;
+        font-size: 1.5em;
+
+    }
+
+    span {
+        padding-right: 16px;
+    }
+
+}
+
+footer {
+
+    .footer-text {
+        padding-left: 5%;
+        font-size: 0.8em;
+    }
+
+    .buttons {
+        font-size: 1em;
+    }
+}

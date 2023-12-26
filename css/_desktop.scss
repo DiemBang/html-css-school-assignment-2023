@@ -1,0 +1,349 @@
+$yellow: rgb(242, 230, 51);
+$green: rgb(0, 255, 56);
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+}
+
+.menu button {
+    width: 45px;
+    height: 40px;
+    top: 20px;
+    left: calc(100vw/24 - 6px);
+    transform: translate(-50%, 0);
+    z-index: 15;
+}
+
+.menu button span {
+    width: 45px;
+    height: 7px;
+    margin-bottom: 6px;
+}
+
+input[type="checkbox"]:hover + .menu button {
+    left: calc(100vw/24 + 10px);
+    transition: left 0.3s ease-in-out;
+}
+
+.hamburger-menu {
+
+    input {
+        top: 20px;
+        width: 45px;
+        height: 40px;
+        left: calc(100vw/24 - 6px);
+        transform: translate(-50%, 0);
+        z-index: 12;
+    }
+
+    .menu nav {
+        top: 0;
+        left: calc(100vw/12);
+        z-index: 100;
+        width: calc(100vw*11/12);
+    }
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin-right: 16px;
+    width: calc(100vw/12);
+    z-index: 10;
+
+    h1 {
+        margin: 0;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        padding-top: 2.5em;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 2em;
+        position: fixed;
+        left: calc(100vw/24);
+        transform: translate(-50%, 0);
+    }
+}
+
+.page-1-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.page-title {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    position: relative;
+    z-index: -1;
+
+    .tahini {
+        font-size: 6em;
+        left: 30%;
+        top: 30%;
+    }
+}
+
+.intro {
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 2.25em;
+    padding: 18px;
+}
+
+.lettuce-img {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &:hover {
+        .arrow {
+            bottom: 1em;
+        }
+    }
+    .arrow {
+        position: absolute;
+        transform: rotate(90deg);
+        transition: bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 5em;
+        bottom: 2em;
+        left: 1em;
+    }
+}
+
+.lettuce-img img {
+    width: auto;
+    height: 100%;
+}
+
+.lettuce-text {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    font-size: 2.25em;
+    padding-left: 16px;
+}
+
+.page-2-container {
+    margin: 16px;
+    padding-bottom: 48px;
+    height: 100vh;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%;
+    height: 20em;
+
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.chickpeas-img {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.hummus-img {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.sauces-img {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    margin-left: 8px;
+}
+
+.chickpeas-img img,
+.hummus-img img,
+.sauces-img img {
+    width: 100%;
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.food-menu {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: calc(100vw/12);
+}
+
+.food-row {
+    padding: 0.3em;
+}
+
+.food-and-description {
+    display: flex;
+    width: 90%;
+    flex-shrink: 0;
+}
+
+.food {
+    width: 40%;
+    font-size: 1.5em;
+}
+
+.description {
+    width: 60%;
+    font-family: 'Roboto Condensed';
+    font-size: 1.2em;
+    align-self: center;
+}
+
+.price {
+    width: 10%;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.menu-item-new,
+.menu-item-vegan,
+.menu-item-popular {
+    position: absolute;
+    font-size: 0.4em;
+    height: 1.5em;
+    margin: 0.8em;
+    z-index: 0;
+}
+
+.page-3-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100vh;
+    width: 100vw;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.form-box-container {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    background-color: $green;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-box {
+    padding-left: 16px;
+    align-self: center;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+form {
+
+    label {
+        font-size: 1.75em;
+    }
+
+    label span {
+        min-width: 5em;
+    }
+
+    input {
+        width: 10em;
+    }
+
+    .button-cancel, .button-request {
+        width: 6em;
+    }
+
+}
+
+.contact-info-container {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    background-color: $green;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    grid-column-start: 8;
+    grid-column-end: 13;
+    position: relative;
+    height: 30em;
+    width: calc(100vw*5/12);
+}
+
+.contact-info .text {
+    position: relative;
+    font-size: 0.75rem;
+
+    li {
+        padding-left: 15%;
+        padding-right: 15%;
+        vertical-align: middle;
+        font-size: 2.5em;
+    }
+
+    .contact-text {
+        display: inline-block;
+        width: 50%;
+    }
+
+    span {
+        padding-right: 18px;
+        font-size: 2em;
+    }
+
+}
+
+footer {
+
+    .footer-text {
+        padding-left: 15%;
+        font-size: 1.125em;
+    }
+
+    .buttons {
+        font-size: 1.3em;
+        margin-left: 30%;
+    }
+
+    button {
+        margin-left: 8px;
+    }
+
+}

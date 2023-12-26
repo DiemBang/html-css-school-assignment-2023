@@ -31,6 +31,8 @@ The project structure is organised as follows:
 
 **images:** A folder containing images used in the project (as per the design) provided by the teacher. 
 
+**screenshots:** Providing screenshots to show the website is responsive in several different web browsers. 
+
 # Acknowledgments 
 
 The design for this project was provided by [@postmodernistx](https://github.com/postmodernistx). 
